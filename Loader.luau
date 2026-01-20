@@ -41,5 +41,5 @@ end
 local irisAssetId = GetIrisAssetId()
 local irisAsset = game:GetObjects(irisAssetId)[1]
 irisAsset.Parent = gethui()
-local Iris = CustomRequire(irisAsset).Init(gethui())
-Iris:Connect(Iris.ShowDemoWindow)
+local Iris = CustomRequire(irisAsset)
+return Iris
